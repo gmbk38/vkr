@@ -1,12 +1,23 @@
-FROM python:3
+# FROM python:3
 
-COPY . .
+# COPY . .
+
+# WORKDIR /
+
+# # EXPOSE 8000
+
+# RUN pip install flask
+# RUN pip install flasgger
+
+# CMD [ "python", "./main_flask.py" ]
+
+FROM python
 
 WORKDIR /
-
-# EXPOSE 8000
 
 RUN pip install flask
 RUN pip install flasgger
 
-CMD [ "python", "./main_flask.py" ]
+COPY . .
+
+CMD [ "python", "./main_flask.py" ] 
