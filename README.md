@@ -7,3 +7,5 @@
 * tensorflow
 * aiogram
 * plotly
+
+![1707211508872](image/README/1707211508872.png)
